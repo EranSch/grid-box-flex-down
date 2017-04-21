@@ -1,0 +1,22 @@
+.flex-example {
+  display: flex;
+  // flex-wrap: wrap;
+  // flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  .box {
+    // flex: 1;
+    // width: 100px;
+    &:nth-child(5) {
+      // flex: 1;
+      // align-self: flex-start;
+      // order: 1;
+    }
+    // .one,
+    &:nth-child(2) {
+      // align-self: flex-end;
+      // order: 2;
+    }
+  }
+}

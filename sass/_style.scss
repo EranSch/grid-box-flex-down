@@ -1,0 +1,41 @@
+html {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-family: Iosevka, sans-serif;
+}
+
+.example-container {
+  border: 2px dotted white;
+  padding: 10px 20px 20px 10px;
+  box-sizing: border-box;
+}
+
+.box {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 60px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+  @include threedshadow(#777, 10);
+  &:nth-child(1) { background-color: BlanchedAlmond }
+  &:nth-child(2)  { background-color: BurlyWood }
+  &:nth-child(3)  { background-color: CadetBlue }
+  &:nth-child(4)  { background-color: Chartreuse }
+  &:nth-child(5)  { background-color: FireBrick }
+  &:nth-child(6)  { background-color: OliveDrab }
+  &:nth-child(7)  { background-color: BlanchedAlmond }
+  &:nth-child(8)  { background-color: BurlyWood }
+  &:nth-child(9)  { background-color: CadetBlue }
+  &:nth-child(10)  { background-color: Chartreuse }
+}
+
+.flex-example {
+  li {
+    padding: 5px;
+  }
+}
+
+.grid-example {
+  min-height: 100vh;
+}

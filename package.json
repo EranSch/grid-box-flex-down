@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "node-sass": "^4.5.2",
+    "npm-run-all": "^4.0.2",
+    "reset-css": "^2.2.0"
+  },
+  "name": "gridbox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "./node_modules/.bin/node-sass --recursive --output css --source-map true --source-map-contents sass",
+    "sass:watch": "yarn sass -- --watch",
+    "browser-sync": "./node_modules/.bin/browser-sync start --server --https --files \"*.html,css/index.css\"",
+    "dev": "./node_modules/.bin/run-p browser-sync sass:watch"
+  },
+  "author": "EranSch",
+  "license": "ISC",
+  "description": ""
+}
